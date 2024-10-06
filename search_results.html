@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Результаты поиска</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="./icon/icons.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="search.js" defer></script>
+  <script src="menufooter.js" defer></script>
+  <script src="copy.js" defer></script>
+</head>
+<body>
+<div class="copy-feedback" id="copyFeedback">Текст скопирован!</div>
+<header>
+  <div class="container">
+    <div class="logo-center">
+      <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="search-results">
+    <div class="container">
+      <h1>Результаты поиска</h1>
+      <div id="search-results"></div>
+      <div class="back-to-home">
+        <a href="index.html" class="back-to-home-btn">Назад на главную страницу</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Сайт Дани</p>
+    <p>Контакты:</p>
+    <div class="social-icons">
+      <a href="https://vk.com/d_a_n_i_s_s_i_m_a"><img src="img/VK.png" alt="VK"></a>
+      <p>Почта: kotenokminer@gmail.com</p>
+    </div>
+    <button id="footer-menu-button" class="footer-menu-btn">Меню</button>
+    <div id="footerMenu" class="footer-menu">
+      <a href="index.html">Главная</a>
+      <a href="Игры.html">Игры</a>
+      <a href="Новости.html">Новости</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

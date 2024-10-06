@@ -1,0 +1,35 @@
+// Универсальный миксин для кнопок
+.button-style(@bg-color,
+ @text-color,
+ @hover-bg,
+ @hover-text,
+ @padding: 10px 20px,
+ @border-radius: 5px,
+ @width: auto,
+ @border: none,
+ @position: static,
+ @top: auto,
+ @right: auto,
+ @z-index: auto,
+ @border-color: none)
+{
+  display: inline-block;
+  padding: @padding;
+  border-radius: @border-radius;
+  text-decoration: none;
+  color: @text-color;
+  background-color: @bg-color;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: @width;
+  border: @border;
+  position: @position;
+  top: @top;
+  right: @right;
+  z-index: @z-index;
+
+  &:hover {
+    background-color: @hover-bg;
+    color: @hover-text;
+  }
+}

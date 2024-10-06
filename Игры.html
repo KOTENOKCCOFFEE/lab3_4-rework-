@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Игры</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="./icon/icons.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="search.js" defer></script>
+  <script src="sliders.js" defer></script>
+  <script src="menufooter.js" defer></script>
+  <script src="color.js" defer></script>
+  <script src="copy.js" defer></script>
+  <script src="Pay.js" defer></script>
+</head>
+
+<body>
+<div class="copy-feedback" id="copyFeedback">Текст скопирован!</div>
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo.png" alt="Логотип"></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="navbar-brand">Меню</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Игры.html">Игры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Новости.html">Новости</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="container">
+      <div class="game-item">
+        <h3>Helldivers 2</h3>
+        <img class="game-img" src="./img/helldivers_2_game.jpg" alt="Helldivers 2">
+        <p>Helldivers 2 - продолжение захватывающей кооперативной игры,
+          где вы сражаетесь за выживание человечества против жестоких врагов в космосе.</p>
+        <span class="price">Цена: 4790 рублей</span>
+        <button class="buy-btn medium" data-toggle="modal" data-target="#paymentModal">Купить</button>
+        <table class="game-table">
+          <caption>Характеристики игры</caption>
+          <tr>
+            <th>Характеристика</th>
+            <th>Значение</th>
+          </tr>
+          <tr>
+            <td>Жанр</td>
+            <td>Экшн</td>
+          </tr>
+          <tr>
+            <td>Платформы</td>
+            <td>PC, PS4, Xbox One</td>
+          </tr>
+          <tr>
+            <td>Разработчик</td>
+            <td>Arrowhead Game Studios</td>
+          </tr>
+        </table>
+        <h2 class="additional-materials-heading">Дополнительные материалы:</h2>
+        <ul class="additional-materials">
+          <li><span>Обзоры:</span></li>
+          <li class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/oVFekxx-g-Q" allowfullscreen></iframe></li>
+          <li><span>Видео:</span></li>
+          <li class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/oD3pxbG9YYI" allowfullscreen></iframe></li>
+          <li><span>Скриншоты:</span></li>
+          <div class="slider">
+            <div class="slider-wrapper">
+              <div class="slide"><img src="./img/hell2_screenshots_1.jpg" alt="Скриншот 1"></div>
+              <div class="slide"><img src="./img/hell2_screenshots_2.jpg" alt="Скриншот 2"></div>
+              <div class="slide"><img src="./img/hell2_screenshots_3.png" alt="Скриншот 3"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </ul>
+      </div>
+
+      <div class="game-item">
+        <h3>Baldur gate 3</h3>
+        <img class="game-img" src="./img/BG3_logo.jpg" alt="Игра 2">
+        <p>Baldur's Gate 3 - продолжение знаменитой серии RPG,
+          которая перенесет вас в мир фэнтезийных приключений,
+          где каждое ваше решение влияет на исход игры.</p>
+        <span class="price">Цена: 2000 рублей</span>
+        <button class="buy-btn medium" data-toggle="modal" data-target="#paymentModal">Купить</button>
+        <table class="game-table">
+          <caption>Характеристики игры</caption>
+          <tr>
+            <th>Характеристика</th>
+            <th>Значение</th>
+          </tr>
+          <tr>
+            <td>Жанр</td>
+            <td>Ролевая игра</td>
+          </tr>
+          <tr>
+            <td>Платформы</td>
+            <td>PC, PS4, Xbox One</td>
+          </tr>
+          <tr>
+            <td>Разработчик</td>
+            <td>Larian Studios</td>
+          </tr>
+        </table>
+        <h2 class="additional-materials-heading">Дополнительные материалы:</h2>
+        <ul class="additional-materials">
+          <li><span>Обзоры:</span></li>
+          <li class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/bwfIUmAJb9Q" allowfullscreen></iframe></li>
+          <li><span>Видео:</span></li>
+          <li class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/wWHEw36gTwU" allowfullscreen></iframe></li>
+          <li><span>Скриншоты:</span></li>
+          <div class="slider">
+            <div class="slider-wrapper">
+              <div class="slide"><img src="./img/BG_screenshot_1.jpg" alt="Скриншот 1"></div>
+              <div class="slide"><img src="./img/BG_screenshot_2.jpg" alt="Скриншот 2"></div>
+              <div class="slide"><img src="./img/BG_screenshot_3.jpg" alt="Скриншот 3"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </ul>
+      </div>
+
+      <div class="game-item">
+        <h3>Atomic Heart</h3>
+        <img class="game-img" src="./img/AT_logo.jpg" alt="Игра 3">
+        <p>Atomic Heart - экшн-игра в альтернативной версии СССР,
+          где вы будете исследовать таинственный объект
+          и сражаться с мутантами и роботами.</p>
+        <span class="price">Цена: 3990 рублей</span>
+        <button class="buy-btn medium" data-toggle="modal" data-target="#paymentModal">Купить</button>
+        <table class="game-table">
+          <caption>Характеристики игры</caption>
+          <tr>
+            <th>Характеристика</th>
+            <th>Значение</th>
+          </tr>
+          <tr>
+            <td>Жанр</td>
+            <td>Экшн</td>
+          </tr>
+          <tr>
+            <td>Платформы</td>
+            <td>PC, PS4, Xbox One</td>
+          </tr>
+          <tr>
+            <td>Разработчик</td>
+            <td>Mundfish</td>
+          </tr>
+        </table>
+        <h2 class="additional-materials-heading">Дополнительные материалы:</h2>
+        <ul class="additional-materials">
+          <li><span>Обзоры:</span></li>
+          <li class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/Nfiic0ZV1YI" allowfullscreen></iframe></li>
+          <li><span>Видео:</span></li>
+          <li class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/0UBiw1xkHl8" allowfullscreen></iframe></li>
+          <li><span>Скриншоты:</span></li>
+          <div class="slider">
+            <div class="slider-wrapper">
+              <div class="slide"><img src="./img/AT_screenshot_1.jpg" alt="Скриншот 1"></div>
+              <div class="slide"><img src="./img/AT_screenshot_2.jpg" alt="Скриншот 2"></div>
+              <div class="slide"><img src="./img/AT_screenshot_3.jpg" alt="Скриншот 3"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paymentModalLabel">Выберите способ оплаты</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="paymentForm">
+          <div class="form-group">
+            <label for="paymentMethod">Выберите способ оплаты:</label>
+            <select class="form-control" id="paymentMethod">
+              <option value="">Выберите...</option>
+              <option value="card">Оплата по карте</option>
+              <option value="phone">Оплата по номеру телефона</option>
+            </select>
+          </div>
+
+
+          <div id="cardPaymentDetails" class="payment-details" style="display: none;">
+            <div class="form-group">
+              <label for="cardNumber">Номер карты:</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="Введите номер карты">
+            </div>
+            <div class="form-group">
+              <label for="pinCode">Пин-код:</label>
+              <input type="password" class="form-control" id="pinCode" placeholder="Введите пин-код">
+            </div>
+            <div class="form-group">
+              <label for="expiryDate">Срок действия:</label>
+              <input type="text" class="form-control" id="expiryDate" placeholder="ММ/ГГ">
+            </div>
+            <div class="form-group">
+              <label for="emailAddressCard">Электронная почта:</label>
+              <input type="text" class="form-control" id="emailAddressCard" placeholder="Введите ваш email">
+            </div>
+          </div>
+
+
+          <div id="phonePaymentDetails" class="payment-details" style="display: none;">
+            <div class="form-group">
+              <label for="phoneNumber">Номер телефона:</label>
+              <input type="tel" class="form-control" id="phoneNumber" placeholder="Введите ваш номер телефона">
+            </div>
+            <div class="form-group">
+              <label for="emailAddressPhone">Электронная почта:</label>
+              <input type="text" class="form-control" id="emailAddressPhone" placeholder="Введите ваш email">
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-primary">Оплатить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>Сайт Дани</p>
+    <p>Контакты:</p>
+    <div class="social-icons">
+      <a href="https://vk.com/d_a_n_i_s_s_i_m_a"><img src="img/VK.png" alt="VK"></a>
+      <p>Почта: kotenokminer@gmail.com</p>
+    </div>
+    <button id="footer-menu-button" class="footer-menu-btn">Меню</button>
+    <div id="footerMenu" class="footer-menu">
+      <a href="index.html">Главная</a>
+      <a href="Игры.html">Игры</a>
+      <a href="Новости.html">Новости</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

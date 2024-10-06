@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Новости</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="./icon/icons.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="search.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="menufooter.js" defer></script>
+  <script src="copy.js" defer></script>
+  <script src="color.js"defer></script>
+</head>
+<body>
+<div class="copy-feedback" id="copyFeedback">Текст скопирован!</div>
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html"><img src="./img/logo.png" alt="Логотип"></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="navbar-brand">Меню</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Игры.html">Игры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Новости.html">Новости</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12 news-item">
+          <img class="news-img game-img" src="./img/BG3_news1.jpeg" alt="Baldur's Gate 3">
+          <h3>Baldur's Gate 3. Новости и обновления</h3>
+          <p>Новые подробности о грядущем обновлении игры Baldur's Gate 3.</p>
+          <a href="https://baldursgate3.game/news/" class="read-more-btn">Читать далее</a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 news-item">
+          <img class="news-img game-img" src="./img/bg3_news2.jpeg" alt="Магия в Baldur's Gate 3">
+          <h3>Изучение магии в мире Baldur's Gate 3</h3>
+          <p>Углубленное рассмотрение механики магии в Baldur's Gate 3.</p>
+          <a href="https://baldursgate3.game/news/" class="read-more-btn">Читать далее</a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 news-item">
+          <img class="news-img game-img" src="./img/OD.jpg" alt="Хидео Кодзима">
+          <h3>Новый проект Хидео Кодзимы</h3>
+          <p>Официальное объявление о новой игре от известного японского разработчика Хидео Кодзимы.</p>
+          <a href="https://www.igromania.ru/news/133401/anonsirovana-novaya-igra-hideo-kodzimyi-pod-nazvaniem-od/" class="read-more-btn">Читать далее</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12 news-item">
+          <img class="news-img game-img" src="./img/FF7R_Integration.jpeg" alt="Final Fantasy VII Remake Integration">
+          <h3>Final Fantasy VII Remake: Объединение</h3>
+          <p>Компания Square Enix объявила о выпуске крупного обновления для Final Fantasy VII Remake,
+            которое добавит мультиплеер и новый контент.</p>
+          <a href="https://finalfantasyvii.square-enix-games.com/integration/" class="read-more-btn">Читать далее</a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 news-item">
+          <img class="news-img game-img" src="./img/LOTRMMO_Announcement.jpeg" alt="The Lord of the Rings MMO Announcement">
+          <h3>Анонс MMO по Миру Властелина Колец</h3>
+          <p>Amazon Game Studios представила долгожданную MMO-игру, основанную на вселенной Властелина Колец.
+            Игроков ждет захватывающее приключение в Средиземье.</p>
+          <a href="https://www.amazon.com/Lord-Rings-MMORPG/dp/B098FRNRXY" class="read-more-btn">Читать далее</a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 news-item">
+          <img class="news-img game-img" src="./img/AC_Expansion.jpeg" alt="Assassin's Creed Expansion">
+          <h3>Расширение мира Assassin's Creed</h3>
+          <p>Ubisoft анонсировала крупное расширение для Assassin's Creed Valhalla,
+            добавляющее новые земли для исследования и эпические задания для игроков.</p>
+          <a href="https://www.ubisoft.com/en-us/game/assassins-creed/valhalla/expansions" class="read-more-btn">Читать далее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-form">
+      <h2>Предложить новость</h2>
+      <form id="news-form">
+        <div class="form-group">
+          <label for="news-title">Заголовок новости:</label>
+          <input id="news-title" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="news-content">Содержание новости:</label>
+          <textarea id="news-content" class="form-control" style="height: 200px; resize: none;"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="news-link">Ссылка на новость:</label>
+          <input id="news-link" class="form-control" type="url">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input id="email" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="number">Телефон:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">+</span>
+            </div>
+            <input id="number" class="form-control" type="text"  pattern="\d+">
+          </div>
+        </div>
+        <button class="submit-button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Сайт Дани</p>
+    <p>Контакты:</p>
+    <div class="social-icons">
+      <a href="https://vk.com/d_a_n_i_s_s_i_m_a"><img src="img/VK.png" alt="VK"></a>
+      <p>Почта: kotenokminer@gmail.com</p>
+    </div>
+    <button id="footer-menu-button" class="footer-menu-btn">Меню</button>
+    <div id="footerMenu" class="footer-menu">
+      <a href="index.html">Главная</a>
+      <a href="Игры.html">Игры</a>
+      <a href="Новости.html">Новости</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
